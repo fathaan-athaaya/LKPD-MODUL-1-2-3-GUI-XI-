@@ -35,6 +35,7 @@ onBeforeUnmount(() => {
  document.body.style.overflow = ''
 })
 </script>
+
 <template>
  <article class="product-card">
   <button class="product-image-button" type="button" @click="bukaZoom">

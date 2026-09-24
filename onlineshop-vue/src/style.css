@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
  --accent: #b86f52;
  --accent-soft: #f4e2d8;
