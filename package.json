@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix onlineshop-vue run dev -- --host 0.0.0.0",
+    "build": "npm --prefix onlineshop-vue run build",
+    "preview": "npm --prefix onlineshop-vue run preview -- --host 0.0.0.0"
+  }
+}

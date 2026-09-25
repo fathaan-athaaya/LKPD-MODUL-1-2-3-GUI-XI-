@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ --accent: #b86f52;
+ --accent-soft: #f4e2d8;
+ --text: #3b302c;
+ --text-muted: #786b63;
+ --bg-soft: #faf6f0;
+ --border: #e5d8cd;
+ --radius: 12px;
+ --shadow: 0 8px 24px rgba(91, 65, 52, 0.1);
+ --shadow-hover: 0 12px 28px rgba(91, 65, 52, 0.17);
+ --gradient-hero: linear-gradient(135deg, #b86f52, #c99b62);
+ --gradient-header: linear-gradient(135deg, #5b5149, #7d8971);
+}
+
+body {
+ margin: 0;
+ color: var(--text);
+ background: var(--bg-soft);
+}
+
+a { text-decoration: none; }
+.container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.page { padding-bottom: 80px; }
+.page-header { background: var(--gradient-header); color: #fff; padding: 56px 20px; text-align: center; }
+.page-header h1 { color: #fff; }
+.btn-pill-solid { border: 0; border-radius: 999px; padding: 10px 16px; color: #fff; background: var(--accent); cursor: pointer; font: inherit; font-weight: 600; }
+.btn-pill-solid:hover { background: #995943; }
+
+.product-list { padding-top: 48px; }
+.grid { display: flex; align-items: stretch; gap: 24px; flex-wrap: wrap; justify-content: center; }
+
+.product-card { display: flex; flex: 1 1 220px; flex-direction: column; max-width: 260px; padding: 16px; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); }
+.product-image-button { width: 100%; padding: 0; border: 0; background: var(--bg-soft); border-radius: 10px; cursor: pointer; overflow: hidden; }
+.product-image { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.product-card h3 { min-height: 2em; margin: 14px 0 4px; }
+.product-price { margin: 0 0 14px; color: var(--text-muted); }
+.product-card .btn-pill-solid { width: 100%; margin-top: auto; }
+.zoom-content { width: min(90vw, 480px); padding: 18px; border-radius: var(--radius); background: #fff; text-align: center; }
+.zoom-image { display: block; width: 100%; max-height: 70vh; object-fit: contain; }
+.zoom-content p { margin: 12px 0 0; font-weight: 700; }
+
+@media (max-width: 640px) {
+ .container { width: min(100% - 24px, 1120px); }
+}
